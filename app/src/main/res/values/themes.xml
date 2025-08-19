@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="OverFlowButtonStyle" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:tint">@color/white</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="Base.Theme.CalculadoraDeIMCMat" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="actionOverflowButtonStyle">@style/OverFlowButtonStyle</item>
+        <item name="android:colorBackground">@color/corAzulClaro</item>
+    </style>
+
+    <style name="Theme.CalculadoraDeIMCMat" parent="Base.Theme.CalculadoraDeIMCMat" />
+</resources>
