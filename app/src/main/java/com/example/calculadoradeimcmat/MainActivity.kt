@@ -1,5 +1,6 @@
 package com.example.calculadoradeimcmat
 
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -30,6 +31,9 @@ class MainActivity : AppCompatActivity() {
             }
             if (categoria.isNotEmpty()) {
                 //ABRIR A TELA DE CÁLCULO
+                val intent = Intent(this, CalculoResultadoActivity::class.java)
+                intent.putExtra("CATEGORIA", categoria)
+                startActivity(intent)
             }
         }
 
